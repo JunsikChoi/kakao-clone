@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.boxes {
+  width: 540px;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 0px 10px;
+}
+.box {
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product {
+  background-color: white;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.product__photo img {
+  width: 300px;
+}
+
+.product__name span {
+  font-weight: 700;
+  font-size: x-large;
+}
+.product__description {
+  margin-top: 10px;
+}
+.product__description span {
+  color: #a7abb0;
+}
+
+.product__val {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__price span {
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.product__stars i {
+  font-size: large;
+}
+.product__stars .full {
+  color: #feb547;
+}
+
+.product__stars .empty {
+  color: #d1dbdf;
+}
+
+.product__stars span {
+  color: #7d838e;
+  margin-left: 5px;
+}
+
+.profile {
+  background-image: url(https://s.abcnews.com/images/Technology/GTY_steve_jobs_ipod_nt_131004_33x16_992.jpg);
+  background-size: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.profile__photo {
+}
+.profile__photo img {
+  height: 110px;
+  width: 110px;
+  border: 4px solid white;
+  border-radius: 55px;
+}
+
+.profile__area {
+  background-color: white;
+  height: 280px;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 55px;
+}
+.profile__name span {
+  font-weight: 600;
+  font-size: x-large;
+}
+.profile__description span {
+  font-size: large;
+  color: #7e848f;
+}
+
+.profile__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 20px;
+}
+
+.btn {
+  height: 65px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.btn span {
+  font-weight: 600;
+  font-size: large;
+}
+
+.btn__follow {
+  background-color: #5c65f7;
+}
+.btn__follow span {
+  color: #cdcef6;
+}
+
+.btn__message {
+  background-color: #e7e9ff;
+}
+
+.btn__message span {
+  color: #6a74ff;
+}
