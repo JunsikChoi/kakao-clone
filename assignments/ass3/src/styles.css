@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 300px;
+  border-radius: 40px;
+  background-color: #748182;
+}
+
+.btn:hover {
+  background-color: #8a9b9c;
+}
+
+.btn:hover + .pic {
+  transform: rotate(135deg) scale(0.7, 0.7);
+  border: solid black 5px;
+}
+
+.btn:hover + .btn span {
+  transform: rotate(135deg) scale(0.7, 0.7);
+  border: solid black 5px;
+}
+
+.btn span {
+  font-size: 30px;
+  color: white;
+}
+
+.pic {
+  height: 200px;
+  width: 200px;
+  transition: transform 1s linear;
+}
+
+.pic img {
+  height: 200px;
+  width: 200px;
+}

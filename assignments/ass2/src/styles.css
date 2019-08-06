@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.gparent {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d90ff;
+}
+.parent {
+  background-color: #ff6a81;
+  height: 20%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.child {
+  background-color: #d8d8d8;
+  height: 25%;
+  width: 25%;
+}
+
+.child:nth-child(2):hover {
+  background-color: red;
+}
