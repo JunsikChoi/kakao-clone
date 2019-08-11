@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background {
+  width: 360px;
+  height: 657px;
+  background-color: #f7f6ff;
+  padding: 20px 40px 40px 15px;
+}
+
+.phone {
+  width: 100%;
+  height: 100%;
+  padding: 35px 20px 25px 20px;
+  border-radius: 30px;
+  background-color: #f7f7f7;
+  box-shadow: 1px 3px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header i {
+  font-size: 15px;
+  opacity: 0.6;
+}
+header span {
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.popular {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popular__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 12px;
+}
+.btn__viewall {
+  font-size: 10px;
+  font-weight: 600;
+  color: #e87e8b;
+}
+.popular__recipes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.popular__recipe {
+  width: 110px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  border-radius: 10px;
+}
+.popular__recipe:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://cdn-prod.medicalnewstoday.com/content/images/articles/324/324956/close-up-of-a-plate-of-food.jpg);
+  background-size: cover;
+}
+.popular__recipe:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190411-potato-salad-horizontal-1-1555688422.png);
+  background-size: cover;
+}
+.popular__recipe:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.bbcgoodfood.com/sites/default/files/styles/category_retina/public/recipe-collections/collection-image/2013/05/baked-chilli-jacket-potatoes.jpg?itok=FHHkChvn);
+  background-size: cover;
+}
+.popular__recipe:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-how-to-make-a-smoothie-horizontal-1542310071.png);
+  background-size: cover;
+}
+.popular__recipe span {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.other__header {
+  margin-bottom: 10px;
+}
+.other__recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.other__recipe {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px 0px;
+  padding: 10px;
+}
+.other__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.details__title,
+.details__count {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.details__count {
+  opacity: 0.3;
+}
+
+.btn__more {
+  color: #e87e8b;
+  cursor: pointer;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.nav-item {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item i {
+  font-size: 15px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.nav-item:nth-child(2) {
+  color: #e87e8b;
+}
+
+.nav-center__icon-container {
+  position: relative;
+  bottom: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background-color: #3f68fe;
+}
+.nav-center__icon-container i {
+  opacity: 1;
+  color: white;
+}
