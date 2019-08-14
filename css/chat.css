@@ -168,6 +168,10 @@
   margin-bottom: 20px;
 }
 
+.message:last-child {
+  margin-bottom: 75px;
+}
+
 .sent-message.message {
   display: flex;
   align-items: center;
