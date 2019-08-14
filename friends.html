@@ -1,124 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/56de94f09d.js"></script>
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Friends | Kakao Clone</title>
-  </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54 </span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/56de94f09d.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Friends | Kakao Clone</title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span class="status-bar__clock">13:54 </span>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
+    <div class="status-bar__column">
+      <i class="fas fa-clock"></i>
+      <i class="fas fa-volume-mute"></i>
+      <i class="fas fa-wifi"></i>
+      <span class="status-bar__battery-level">100%</span>
+      <i class="fas fa-battery-full"></i>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__header-column">
+      <h1 class="header__title">Friends</h1>
+    </div>
+    <div class="header__header-column">
+      <span class="header__icon">
+        <i class="fas fa-search"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-cog"></i>
+      </span>
+    </div>
+  </header>
+  <main class="friends">
+    <header class="friends__header">
+      <div class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_me.png" alt="" class="g-avartar friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Jun-Sik Choi
+            </span>
+            <span class="friend__status">
+              Hello World!
+            </span>
+          </div>
+        </div>
       </div>
     </header>
-    <main class="friends">
-      <header class="friends__header">
-        <div class="friends__friend friend">
-          <div class="friend__column">
-            <img
-              src="images/avartar_me.png"
-              alt=""
-              class="g-avartar friend__avartar"
-            />
-            <div class="friend__content">
-              <span class="friend__name">
-                Jun-Sik Choi
-              </span>
-              <span class="friend__status">
-                Hello World!
-              </span>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="friends__plus">
-        <h5 class="friends__title">Plus Friend</h5>
-        <div class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avartar_plus.png" alt="" class="friend__avartar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Plus Friend
-              </span>
-            </div>
+    <div class="friends__plus">
+      <h5 class="friends__title">Plus Friend</h5>
+      <div class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_plus.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Plus Friend
+            </span>
           </div>
         </div>
       </div>
-      <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
-        <li class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avartar_njw.png" alt="" class="friend__avartar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Jiwon Rho
-              </span>
-              <span class="friend__status">
-                Hello World!
-              </span>
-            </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__now-listening">
-              <span>
-                Scientists - Coldplay
-                <i class="fas fa-play"></i>
-              </span>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="fas fa-user"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">8</div>
-            <i class="far fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen smaller.</span>
     </div>
-  </body>
+    <ul class="friends__list">
+      <h5 class="friends__title">Friends 14</h5>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_njw.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Gorani
+            </span>
+            <span class="friend__status">
+              Hello World!
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+          <div class="friend__now-listening">
+            <span>
+              Scientists - Coldplay
+              <i class="fas fa-play"></i>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_ajy.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Joo
+            </span>
+            <span class="friend__status">
+
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+          <div class="friend__now-listening">
+            <span>
+              길 (Song by 아이유, 헨리, 조현아)
+              <i class="fas fa-play"></i>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_kth.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Teares
+            </span>
+            <span class="friend__status">
+              new Start
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+        </div>
+      </li>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_lgy.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              G yong
+            </span>
+            <span class="friend__status">
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+        </div>
+      </li>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_pik.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              GGook
+            </span>
+            <span class="friend__status">
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+        </div>
+      </li>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_psh.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Sso
+            </span>
+            <span class="friend__status">
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+        </div>
+      </li>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_syb.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Bin
+            </span>
+            <span class="friend__status">
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+        </div>
+      </li>
+      <li class="friends__friend friend">
+        <div class="friend__column">
+          <img src="images/avartar_ycw.png" alt="" class="friend__avartar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              Wan
+            </span>
+            <span class="friend__status">
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+          <div class="friend__now-listening">
+            <span>
+              목소리 - 김필
+              <i class="fas fa-play"></i>
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a href="friends.html" class="nav__list-link">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="index.html" class="nav__list-link">
+          <div class="nav__badge">8</div>
+          <i class="far fa-comment"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="find.html" class="nav__list-link">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="more.html" class="nav__list-link">
+          <i class="fas fa-ellipsis-h"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="bigScreen">
+    <span class="bigScreen__text">Please make your screen smaller.</span>
+  </div>
+</body>
+
 </html>
