@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #F8F8F8;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+}
+
+.box img {
+  width: 150px;
+  height: 150px;
+}
+
+.cover {
+  background-color: #27394A;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  position: relative;
+  bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:first-child .cover {
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.box:nth-child(2) .cover {
+  height: 100px;
+  flex-direction: row;
+  bottom: 0px;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.box:nth-child(2) .container img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.box:last-child .container {
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.box:last-child .cover {
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.box:last-child .cover .company span {
+  font-size: 15px;
+}
+
+.company {
+  margin: 15px;
+}
+
+.company span {
+  color:white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn {
+  width: 130px;
+  height: 50px;
+  background-color: #E83E63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn span {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.box:first-child .cover:hover {
+  transform : translate(20px, 20px);
+  opacity: 1;
+}
+
+.box:nth-child(2):hover > .cover {
+  transform: translateY(-100px);
+  opacity: 1;
+}
+
+.box:nth-child(2):hover img {
+  transform: translateY(-50px);
+}
+
+.hide {
+  background-color: #F8F8F8;
+  width: 300px;
+  height: 200px;
+  opacity: 1;
+  position: relative;
+  bottom: 100px;
+  z-index: 2;
+}
+
+.box:last-child:hover > .container {
+  transform: scale(0.5) translateY(-90px);
+}
