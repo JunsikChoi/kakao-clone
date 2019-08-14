@@ -56,7 +56,7 @@
 
 .chat-screen {
   background-image: url("../images/chatbg.png");
-  min-height: 1000vh;
+  min-height: 100vh;
   margin-top: 20px;
   padding-top: 45px;
 }
@@ -166,6 +166,10 @@
   align-items: flex-start;
   width: 50%;
   margin-bottom: 20px;
+}
+
+.message:last-child {
+  margin-bottom: 75px;
 }
 
 .sent-message.message {
